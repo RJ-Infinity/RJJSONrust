@@ -6,7 +6,7 @@ fn consume_chr(string: &mut String){
 	*string = chars.as_str().to_string();
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum JSON{
 	Null,
 	Dict(HashMap<String, Box<JSON>>),
